@@ -16,7 +16,6 @@
 #along with this program in the LICENSE file.
 #If it is not there, see <http://www.gnu.org/licenses/>.
 ########################################################################
-e
 
 
 import pandas as pd
