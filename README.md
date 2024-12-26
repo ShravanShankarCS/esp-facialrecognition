@@ -6,7 +6,9 @@ A project that uses OpenCV and ESP32's libraries to detect faces.
 
 [![Project Showcase](https://i.imgur.com/su9OqSh.png)](https://youtu.be/LFXQLPcbmzs?feature=shared)
 
-## Facial Recognition System Features
+<details>
+
+<summary> ## Facial Recognition System Features </summary>
 
 
 #### 1. **Facial Recognition for Attendance**:
@@ -70,8 +72,7 @@ A project that uses OpenCV and ESP32's libraries to detect faces.
 #### 15. **Time Efficiency**:
    - The program scans the images directory every 10 seconds for new faces, ensuring it stays up-to-date with minimal processing delay.
    - Uses a smaller image resolution (downscaled by 4x) for faster face detection and encoding, ensuring performance stays high.
-
----
+</details>
 
 ## To-Do list:  
 
