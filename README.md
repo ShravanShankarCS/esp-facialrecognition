@@ -8,7 +8,7 @@ A project that uses OpenCV and ESP32's libraries to detect faces.
 
 <details>
 
-<summary> ## Facial Recognition System Features </summary>
+## <summary> Facial Recognition System Features </summary>
 
 
 #### 1. **Facial Recognition for Attendance**:
