@@ -4,7 +4,7 @@ A project that uses OpenCV and ESP32's libraries to detect faces.
 
 ## Video Showcase
 
-[![Project Showcase](https://i.imgur.com/aUcqh8j.png)](https://youtu.be/LFXQLPcbmzs?feature=shared)
+[![Project Showcase](https://i.imgur.com/su9OqSh.png)](https://youtu.be/LFXQLPcbmzs?feature=shared)
 
 # Facial Recognition System Features
 
