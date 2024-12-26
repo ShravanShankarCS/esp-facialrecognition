@@ -6,9 +6,8 @@ A project that uses OpenCV and ESP32's libraries to detect faces.
 
 [![Project Showcase](https://i.imgur.com/su9OqSh.png)](https://youtu.be/LFXQLPcbmzs?feature=shared)
 
-# Facial Recognition System Features
+## Facial Recognition System Features
 
-## Features List
 
 #### 1. **Facial Recognition for Attendance**:
    - Detects and recognizes faces in real-time using a webcam or camera feed.
@@ -111,7 +110,7 @@ To set up the necessary environment:
 3. Ensure you select all **recommended packages** and make sure CMake is selected and remove IntelliCode (if you dont want 5GiB of AI you won't use. it extends installation time) before installation
 
 
-### 3. Install Python Dependencies
+## 3. Install Python Dependencies
 
 - Please notethat it is very important that you do the second step before installing the python requirements.
 
@@ -121,7 +120,7 @@ Install the required Python dependencies from the `requirements.txt` file:
 pip install -r requirements.txt
 ```
 
-### 4. Set Up Arduino IDE
+## 4. Set Up Arduino IDE
 
 1. Download and install the [Arduino IDE](https://www.arduino.cc/en/software).
 2. Download the [Custom ESP-32 Camera Library](https://github.com/yoursunny/esp32cam)
