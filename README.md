@@ -6,9 +6,10 @@ A project that uses OpenCV and ESP32's libraries to detect faces.
 
 [![Project Showcase](https://i.imgur.com/su9OqSh.png)](https://youtu.be/LFXQLPcbmzs?feature=shared)
 
+## Facial Recognition System Features
 
-## Facial Recognition System Features 
-
+<details>
+<summary>Click to expand</summary>
 
 #### 1. **Facial Recognition for Attendance**:
    - Detects and recognizes faces in real-time using a webcam or camera feed.
@@ -72,23 +73,8 @@ A project that uses OpenCV and ESP32's libraries to detect faces.
    - The program scans the images directory every 10 seconds for new faces, ensuring it stays up-to-date with minimal processing delay.
    - Uses a smaller image resolution (downscaled by 4x) for faster face detection and encoding, ensuring performance stays high.
 
+</details>
 
-## To-Do list:  
-
-#### 1. **Multi-Camera Support**:
-   - Integrate support for multiple cameras or streams to enable real-time recognition from different sources simultaneously.
-
-#### 2. **Mobile Integration**:
-   - Develop a mobile app interface to interact with the system, display attendance logs, or provide real-time facial recognition results.
-
-#### 3. **Enhanced Matching Algorithms**:
-   - Implement additional algorithms or tweak the existing `face_recognition` library settings for better matching accuracy, especially in low-light or crowded environments.
-
-#### 4. **Security Features**:
-   - Add security layers, such as encrypted attendance logs or real-time alerts when unauthorized faces are detected.
-
-#### 5. **User Interface (UI)**:
-   - Develop a GUI for the system to make it more accessible for non-technical users to configure settings, view logs, and manage the database.
 
 ## Installation Steps
 
@@ -175,9 +161,32 @@ python3 main.py
 - Ensure your system has the latest Python version installed.
 - Verify that your environment paths are set up correctly for CMake and Dlib.
 
+
+## To-Do List
+
+<details>
+<summary>Click to expand</summary>
+
+#### 1. **Multi-Camera Support**:
+   - Integrate support for multiple cameras or streams to enable real-time recognition from different sources simultaneously.
+
+#### 2. **Mobile Integration**:
+   - Develop a mobile app interface to interact with the system, display attendance logs, or provide real-time facial recognition results.
+
+#### 3. **Enhanced Matching Algorithms**:
+   - Implement additional algorithms or tweak the existing `face_recognition` library settings for better matching accuracy, especially in low-light or crowded environments.
+
+#### 4. **Security Features**:
+   - Add security layers, such as encrypted attendance logs or real-time alerts when unauthorized faces are detected.
+
+#### 5. **User Interface (UI)**:
+   - Develop a GUI for the system to make it more accessible for non-technical users to configure settings, view logs, and manage the database.
+
+</details>
+
 ## License
 
-This project is licensed upon the [GNU License](https://www.gnu.org/).
+This project is licensed on the [GNU License](https://www.gnu.org/).
 
 ## Contribution
 
