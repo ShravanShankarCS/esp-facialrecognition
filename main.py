@@ -1,3 +1,24 @@
+########################################################################
+#ESP32 Cam Facial Recognition
+#Copyleft Shravan Shankar C S 2024; see the INFO.md file for authorship.
+
+#This program is free software: you can redistribute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Fre Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+
+#This program is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+
+#You should have received a copy of the GNU General Public License
+#along with this program in the LICENSE file.
+#If it is not there, see <http://www.gnu.org/licenses/>.
+########################################################################
+e
+
+
 import pandas as pd
 import cv2
 import urllib.request
