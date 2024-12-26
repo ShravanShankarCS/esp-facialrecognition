@@ -156,7 +156,7 @@ CAMERA FAIL
 2. in the `url` section, change the IP to the one you se on the Serial Monitor.
 3. Execute the script.
 ```bash
-python3 main,py
+python3 main.py
 ```
 
 
