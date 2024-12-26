@@ -119,6 +119,11 @@ Install the required Python dependencies from the `requirements.txt` file:
 ```bash
 pip install -r requirements.txt
 ```
+If something fails, try installing the libraries specifically with this command
+
+```bash
+python3 pip install (library name)
+```
 
 ## 4. Set Up Arduino IDE
 
