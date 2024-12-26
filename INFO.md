@@ -11,7 +11,9 @@ or fork it if you'd like to make more sweeping changes.
 
 ## My contributions (Shravan Shankar C S)
 
-## Contributions
+<details>
+
+<summary>Click to view</summary>
 
 1. **Path Sanitization and Handling Spaces in Filenames**  
    Refactored the handling of filenames in the directory to manage spaces and replace them with underscores. Implemented a system to rename files containing spaces, ensuring filenames are sanitized before processing.
@@ -43,6 +45,7 @@ or fork it if you'd like to make more sweeping changes.
 10. **Code Refactoring and Optimization**  
     Refactored the code for better readability and efficiency, removing redundant checks, variables, and improving the overall modularity of functions.
 
+</details>
 
 ## What's new?
 
