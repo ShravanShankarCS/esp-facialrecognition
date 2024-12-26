@@ -155,11 +155,16 @@ CAMERA FAIL
 1. Open the main.py file.
 2. In the `url` section, change the IP to the one you se on the Serial Monitor.
 3. Execute the script.
+
+
+## 6. Usage.
+
+1. In the `Training-images` directory, add your images there. Make sure to add underscores `_` in the filename to seperate the name and surname. (If not, the python program will automatically do that.)
+2. Execute the python script.
 ```bash
 python3 main.py
 ```
-
-
+3. Enjoy. :)
 
 ## Additional Notes
 
