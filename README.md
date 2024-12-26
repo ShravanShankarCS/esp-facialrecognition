@@ -153,7 +153,7 @@ CAMERA FAIL
 ## 5. Configuring the Python script.
 
 1. Open the main.py file.
-2. in the `url` section, change the IP to the one you se on the Serial Monitor.
+2. In the `url` section, change the IP to the one you se on the Serial Monitor.
 3. Execute the script.
 ```bash
 python3 main.py
