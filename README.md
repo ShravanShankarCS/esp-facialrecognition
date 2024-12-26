@@ -172,7 +172,7 @@ python3 main.py
 
 ## License
 
-This project runs on the [GNU License](https://www.gnu.org/).
+This project is licensed upon the [GNU License](https://www.gnu.org/).
 
 ## Contribution
 
