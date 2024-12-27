@@ -42,23 +42,23 @@ def load_images_from_directory():
     newImages = []
     newClassNames = []
     encodedNames = [os.path.splitext(name)[0] for name in classNames]
+
     for cl in myList:
-        name_parts = cl.replace("_", " ").split()
-        formatted_name = "_".join(part.capitalize() for part in name_parts)
         file_name, file_extension = os.path.splitext(cl)
         valid_extensions = ['.jpg', '.jpeg', '.png', '.bmp']
-        
+
         if file_extension.lower() not in valid_extensions:
             continue
 
-        if file_extension == '':
-            sanitized_name = f"{formatted_name}{file_extension.lower()}"
-            if cl != sanitized_name and cl not in encodedNames:
-                old_file_path = os.path.join(path, cl)
-                new_file_path = os.path.join(path, sanitized_name)
-                print(f"Renaming: {cl} -> {sanitized_name}")
-                os.rename(old_file_path, new_file_path)
-                cl = sanitized_name
+        formatted_name = file_name.strip().lower().replace(" ", "_")
+        sanitized_name = f"{formatted_name}{file_extension.lower()}"
+
+        if cl != sanitized_name:
+            old_file_path = os.path.join(path, cl)
+            new_file_path = os.path.join(path, sanitized_name)
+            print(f"Renaming: {cl} -> {sanitized_name}")
+            os.rename(old_file_path, new_file_path)
+            cl = sanitized_name
 
         name = os.path.splitext(cl)[0]
         if name not in encodedNames:
@@ -66,6 +66,7 @@ def load_images_from_directory():
             if curImg is not None:
                 newImages.append(curImg)
                 newClassNames.append(name)
+
     return newImages, newClassNames
 
 def format_display_name(name):
@@ -76,11 +77,12 @@ def findEncodings(images):
     encodeList = []
     for img in images:
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-        encode = face_recognition.face_encodings(img)[0]
-        encodeList.append(encode)
+        encode = face_recognition.face_encodings(img)
+        if encode:
+            encodeList.append(encode[0])
     return encodeList
 
-def logPerson(name):
+def logAttendance(name):
     display_name = format_display_name(name)
     with open(log_file, 'r+') as f:
         myDataList = f.readlines()
@@ -131,7 +133,7 @@ while True:
             cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), 2)
             cv2.rectangle(img, (x1, y2 - 35), (x2, y2), (0, 255, 0), cv2.FILLED)
             cv2.putText(img, format_display_name(name), (x1 + 6, y2 - 6), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 255, 255), 2)
-            logPerson(name)
+            logAttendance(name)
 
     cv2.imshow('Webcam', img)
     key = cv2.waitKey(5)
